@@ -1,0 +1,513 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.main-color {
+  color: #0078ff !important;
+}
+.navbar-nav {
+  color: white;
+}
+.navbar {
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.navbar-collapse {
+  flex-grow: 0;
+}
+.navbar-brand {
+  font-size: 1.8rem;
+  color: white;
+}
+.navbar-brand:hover {
+  color: white;
+}
+.nav-item {
+  padding-right: 10px;
+}
+.dropdown-item:hover {
+  color: white;
+}
+
+nav ul li a {
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  height: 0.1em;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+nav ul li a {
+  overflow: hidden;
+}
+
+nav ul li a::after {
+  content: "";
+  opacity: 1;
+  transform: translate3d(-110%, 0, 0);
+}
+
+nav ul li a:hover::after,
+nav ul li a:focus::after {
+  content: "";
+  transform: translate3d(0, 0, 0);
+}
+
+.nav-link {
+  color: white;
+  font-weight: 500;
+}
+.nav-link:hover {
+  color: white;
+}
+header {
+  height: 100vh;
+  background: url("../images/intro-bg.jpg") repeat fixed;
+  background-size: cover;
+  background-position: center;
+}
+#home {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+#home h1 {
+  font-size: 4.5rem;
+  color: white;
+  font-weight: 500;
+}
+
+.home-typing {
+  font-size: 3rem;
+}
+.home-typing::after {
+  content: " ";
+  animation-name: typing;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+@keyframes typing {
+  0% {
+    content: " D|";
+  }
+  2% {
+    content: " De|";
+  }
+  4% {
+    content: " Dev|";
+  }
+  6% {
+    content: " Deve|";
+  }
+  8% {
+    content: " Devel|";
+  }
+  10% {
+    content: " Develo|";
+  }
+  12% {
+    content: " Develop|";
+  }
+  14% {
+    content: " Develope|";
+  }
+  16% {
+    content: " Developer|";
+  }
+  20% {
+    content: " Developer|";
+  }
+  25% {
+    content: " Developer|";
+  }
+  30% {
+    content: " Developer|";
+  }
+  35% {
+    content: " Developer|";
+  }
+  40% {
+    content: " Developer|";
+  }
+  45% {
+    content: " Developer|";
+  }
+
+  50% {
+    content: " Develope|";
+  }
+  52% {
+    content: " Develop|";
+  }
+  54% {
+    content: " Develo|";
+  }
+  56% {
+    content: " Devel|";
+  }
+  58% {
+    content: " Deve|";
+  }
+  60% {
+    content: " Dev|";
+  }
+  62% {
+    content: " De|";
+  }
+  64% {
+    content: " Des|";
+  }
+  66% {
+    content: " Desi|";
+  }
+  68% {
+    content: " Desig|";
+  }
+  70% {
+    content: " Design|";
+  }
+  72% {
+    content: " Designer|";
+  }
+  76% {
+    content: " Designer|";
+  }
+  80% {
+    content: " Designer|";
+  }
+  82% {
+    content: " Designer|";
+  }
+  88% {
+    content: " Designer|";
+  }
+  90% {
+    content: " Designe|";
+  }
+  91% {
+    content: " Design|";
+  }
+  92% {
+    content: " Desig|";
+  }
+  93% {
+    content: " Desi|";
+  }
+  94% {
+    content: " Des|";
+  }
+  95% {
+    content: " Dev|";
+  }
+  97% {
+    content: " D|";
+  }
+  100% {
+    content: " |";
+  }
+}
+
+#about {
+  line-height: 23px;
+  font-size: 1.2rem;
+}
+#about img {
+  width: 70%;
+  border-radius: 5px;
+}
+#about p {
+  color: rgb(94, 94, 94);
+}
+#about .container .row .row {
+  justify-content: flex-start;
+  align-items: center;
+}
+strong {
+  color: black;
+}
+.infos {
+  font-size: 1rem;
+}
+.about-me h1 {
+  position: relative;
+  font-size: 2rem;
+}
+.special-h1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  width: 20%;
+  height: 4px;
+  background-color: #0078ff;
+}
+.about-me p {
+  font-weight: 300;
+}
+.services-header p {
+  color: #4e4e4e;
+  position: relative;
+}
+.services-header p::after {
+  position: absolute;
+  content: "";
+  bottom: -15px;
+  left: 50%;
+  background-color: #0078ff;
+  width: 35px;
+  height: 4px;
+  transform: translate(-50%, 0px);
+}
+.services-icon {
+  box-sizing: border-box;
+}
+.services-content .services-icon span {
+  font-size: 42px;
+  box-sizing: border-box;
+  border: #0078ff 10px solid;
+  transition: 0.5s;
+  padding: 20px 25px;
+}
+.services-content h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 15px;
+}
+.services-content p {
+  color: #4e4e4e;
+  line-height: 28px;
+}
+
+.services-content .services-icon span:hover {
+  border: rgba(197, 195, 195, 0.8) 8px solid;
+  background-color: #0078ff;
+  color: white;
+}
+
+.service-footer {
+  position: relative;
+  color: white;
+  background-color: turquoise;
+  background: url("../images/counters-bg.jpg") repeat fixed 100%;
+  background-position: center;
+  background-size: cover;
+}
+.footer-background-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #0078ff;
+  opacity: 0.7;
+}
+
+.counter-icon span {
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 30px;
+  border: rgb(207, 206, 206) solid 8px;
+}
+
+.work-header p {
+  position: relative;
+}
+.work-header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.work-header p::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  width: 40px;
+  height: 5px;
+  background-color: #0078ff;
+  transform: translate(-50%, 0);
+}
+.work-content .container .row div {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+.content-footer p {
+  font-size: 12px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.content-footer i {
+  font-size: 2.5rem;
+  color: #0078ff;
+}
+.work-content .container .row .shadow {
+  width: 31%;
+}
+.work-content .container .row {
+  justify-content: center;
+  align-items: center;
+}
+.work-img {
+  overflow: hidden;
+}
+.item-content img {
+  transition: 0.5s;
+}
+.item-content:hover img {
+  transform: scale(1.2);
+}
+.testmonial {
+  background: url("../images/overlay-bg.jpg") repeat fixed 100%;
+  background-size: cover;
+  position: relative;
+}
+.test-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0078ff;
+  opacity: 0.6;
+}
+.w-15 {
+  width: 150px;
+}
+.carousel-indicators [data-bs-target] {
+  height: 15px;
+}
+.blog-h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.blog-p {
+  position: relative;
+}
+.blog-p::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  height: 0.4rem;
+  width: 45px;
+  background-color: #0078ff;
+  transform: translate(-50%, 0);
+}
+
+.blog-body p {
+  color: #4e4e4e;
+}
+.blog-special-word {
+  display: inline-block;
+  background-color: #0078ff;
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -40px);
+  font-weight: 600;
+}
+.blog-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog-footer img {
+  width: 42px;
+  border-radius: 50%;
+}
+
+#contact {
+  background: url("../images/overlay-bg.jpg") repeat fixed 100%;
+  background-size: cover;
+  position: relative;
+}
+.contact-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #0078ff;
+  opacity: 0.5;
+}
+.contact-us-content {
+  position: relative;
+  background: white;
+}
+.contact-h3 {
+  position: relative;
+  font-weight: 600;
+}
+.contact-h3::after {
+  position: absolute;
+  content: "";
+  bottom: 5px;
+  left: 10%;
+  transform: translate(-50%, 0);
+  background: #0078ff;
+  width: 20%;
+  height: 4px;
+}
+.contact-p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 35px;
+}
+.contact-links ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.contact-links ul li a {
+  font-size: 22px;
+  border: 4px #0078ff solid;
+  border-radius: 50%;
+  padding: 3px 5px;
+  color: black;
+  transition: 0.5s;
+}
+.contact-links ul li a:hover {
+  background-color: #0078ff;
+  color: white;
+}
+
+footer {
+  background: #0062d3;
+  color: white;
+}
+
+.to-top-button {
+  position: fixed;
+  bottom: 5px;
+  left: 50%;
+}
+.to-top-button {
+  color: white;
+  font-size: 26px;
+  border: 3px #0062d3 solid;
+  border-radius: 50%;
+  background: #0062d3;
+}
+
+@media screen and (max-width: 768px) {
+  .work-content .container .row .shadow {
+    width: 100%;
+  }
+}
